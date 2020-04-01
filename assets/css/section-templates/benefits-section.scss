@@ -1,0 +1,135 @@
+.benefits-section {
+	position: relative;
+	margin: 30px 0;
+	padding: 20px;
+
+	.section-title {
+		margin-bottom: 30px;
+	}
+
+	.section-title::before {
+		background-position:center!important;
+	}
+
+	.benefits-section_intro {
+	 	opacity: 0.8;	
+	 	font-size: 18px;
+	 	max-width: 620px;
+	 	margin: 0 auto 50px;
+	}
+
+	.benefit-column {
+		max-width: 240px;
+		margin: auto;
+		text-align: center;
+
+		h3 {
+			font-size: 36px;
+			line-height: .83;
+		}
+		
+
+		.img-wrap {
+			position: relative;
+			text-align: center;
+			width: 185px;
+  			height: 185px;
+  			border-radius: 100%;
+  			display: inline-flex;
+  			align-items: center;
+  			justify-content: center;
+  			margin:0 0 20px;
+
+  			img {
+  				display: block;
+  			}
+		}
+	}
+
+	.benefit-column:nth-child(1) {
+		.img-wrap {
+			background-color: $pink;
+		}
+		ol {
+			li::before {
+				border-color:$pink;
+				background-color: $pink;
+			}
+			li {
+				span {
+					border-color:$pink;
+				}
+			}
+		}
+	}
+	.benefit-column:nth-child(2) {
+		.img-wrap {
+			background-color: $light-blue;
+		}
+		ol {
+			li::before {
+				border-color:$light-blue;
+				background-color: $light-blue;
+			}
+			li {
+				span {
+					border-color:$light-blue;
+				}
+			}
+		}
+	}
+	.benefit-column:nth-child(3) {
+		.img-wrap {
+			background-color: $light-orange;
+		}
+		ol {
+			li::before {
+				border-color:$light-orange;
+				background-color: $light-orange;
+			}
+			li {
+				span {
+					border-color:$light-orange;
+				}
+			}
+		}		
+	}
+
+	ol {
+		text-align: left;
+		list-style: none;
+  		counter-reset: my-awesome-counter;
+
+  		li {
+  			counter-increment: my-awesome-counter;
+  			display: flex;
+  			margin-bottom: 10px;
+			
+			span {
+				flex: 1;
+				border:1px solid;
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 1.29;
+				display: inline-flex;
+				align-items: center;
+				padding: 3px 15px;
+				border-top-right-radius: 6px;
+				border-bottom-right-radius: 6px;
+			}
+  		}
+
+  		li::before {
+  			content: counter(my-awesome-counter);
+			font-weight: bold;
+			width: 46px;
+			height: 46px;
+			border-top-left-radius: 6px;
+			border-bottom-left-radius: 6px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 24px;
+  		}
+	}
+}

@@ -1,0 +1,23 @@
+.intro-section {
+	position: relative;
+
+	.intro-section_inner {
+		max-width: 620px;
+		margin: 0 auto;
+		text-align: center;
+
+		p {
+			font-size: 18px;
+			line-height: 1.61;
+			opacity: .8;
+		}
+	}
+
+	.section-title {
+		margin-bottom: 30px;
+	}
+
+	.section-title::before {
+		background-position: center!important;
+	}
+}

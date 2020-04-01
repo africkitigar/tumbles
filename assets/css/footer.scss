@@ -1,0 +1,214 @@
+.footer {
+    position: relative;
+    font-size: 15px;
+    
+    .btn {
+        color: #fff!important;
+    }
+    
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        color: $primary;
+        font-size: 15px;
+    }
+
+    a:hover {
+        color: $green;
+    }
+    
+    .footer-top {
+        padding-top: 20px;
+
+        .footer-top-menu {
+            max-width: 200px;
+            
+            li {
+                margin-bottom: 15px;
+            }
+            > li {
+                > a {
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+            }
+            
+            .submenu {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    .footer-middle {
+        margin-top: 40px;
+        .container {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            border-top: 1px solid rgba($primary, .2);
+            border-bottom: 1px solid rgba($primary, .2);
+        }
+
+        .footer-column {
+            margin: 20px 0;
+            max-width: 265px;
+
+            h5 {
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 1.27;
+                margin-bottom: 20px;
+            }
+        }
+
+        .footer-column:nth-child(2) {
+            text-align: center;
+        }
+
+        .stripe-footer {
+            margin-bottom: 20px;
+        }
+    }
+
+    .footer-bottom {
+        font-size: 15px;
+        opacity: .8;
+        padding: 20px 0;
+
+        .footer-bottom-menu {
+            display: flex;
+
+            li {
+                position: relative;
+                margin-left: 15px;
+            }
+
+            li::before {
+                content: "";
+                display: inline-flex;
+                background: rgba($primary, .8);
+                width: 1px;
+                height: 15px;
+                position: relative;
+                top: 2px;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+
+/* FOOTER HERO */
+.footer-hero {
+    position: relative;
+    max-height: 620px;
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+.footer-hero::after,
+.footer-hero::before {
+    content: "";
+    background-size: cover!important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 69px;
+}
+.footer-hero::after { 
+    background: url(assets/images/footer-bottom.svg) no-repeat;   
+    bottom: 0;  
+}
+
+.footer-hero::before {
+    background: url(assets/images/footer-top.svg) no-repeat;
+    top: 0;
+}
+/* end of FOOTER HERO */
+
+/* FOOTER NEWSLETTER */
+.footer-newsletter {
+    background: #f8faec;
+    position: relative;
+    margin-top: 150px;
+    align-items: center;
+    padding: 0 20px;
+
+    img {
+        display: block;
+        margin: 20px;
+    }
+
+    .footer-newsletter_inner {
+        max-width: 400px;
+        margin: 20px;
+
+        p {
+            font-size: 18px;
+        }
+
+        input:focus {
+            outline: none!important;
+        }
+
+        .newsletter-email {
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            font-size: 15px;
+            border: solid 1px #ccd2de;
+            padding:12px 15px;
+            flex: 1;
+        }
+
+        button {
+            background-color: $green;
+            border:1px solid $green;
+            padding: 12px 20px;
+            height: 44px;
+            font-size: 15px;
+            color: #fff;
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: lighten($green, 10%);
+        }
+    }
+}
+.footer-newsletter::before {
+    content: "";
+    background-size: cover!important;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 69px;
+    background: url(assets/images/footer-top.svg) no-repeat;
+    top: -69px;
+    transform: scaleY(-1);
+}
+
+
+/* return to top button */
+#return-to-top { 
+    position: fixed; 
+    bottom: 20px; right: 20px; 
+    display: none; 
+    z-index: 1983;
+    background: $green;
+    padding: 1px 8px 3px;
+    border-radius: 3px;
+
+}
+#return-to-top:hover {
+    background-color: lighten($green, 10%);
+}
+#return-to-top i { 
+    color: #84bf41; 
+    font-size: 28px;  
+}

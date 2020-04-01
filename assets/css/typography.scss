@@ -1,0 +1,30 @@
+h1, h2, h3 {
+	font-family:'Oduda';
+  font-weight: 600;
+  margin-bottom:20px;
+}
+h1 {
+	font-size: 64px;
+  font-weight: bold;
+  line-height: 1.25;
+}
+h3 {
+  font-size: 30px;
+  line-height:1.1;
+}
+h6 {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+p {
+  margin-bottom:20px;
+}
+@font-face {
+	font-family:'Oduda';
+	src: url('assets/fonts/Oduda-Bold.otf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+}
+.text-center {
+  text-align:center;
+}

@@ -1,0 +1,42 @@
+.hero {
+	position: relative;
+	max-height: 700px;
+
+	img {
+		display: block;
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+	}
+
+	.hero_inner {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		padding-top: 95px;
+		background-color: rgba(0,0,0,.33);
+
+		h1 {
+			max-width: 780px;
+			text-align: center;
+			color: #fff;
+		}
+	}
+}
+
+.hero::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 215px;
+	background: url(assets/images/hero-bottom.svg) no-repeat;
+	z-index: 3;
+	background-size: cover;
+}

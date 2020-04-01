@@ -1,0 +1,85 @@
+/* global box-sizing */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font:400 16px/1.6 'Montserrat', sans-serif;
+	color:$primary;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    min-height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.wrapper {
+	flex: 1 0 auto;
+	position:relative;
+}
+
+img {
+	max-width:100%;
+}
+.img-wrap {
+	position:relative;
+}
+a, button {
+	transition: all .23s ease-in;
+}
+
+.btn {
+	color: #fff;
+	background-color: $green;
+	min-width: 148px;
+	display: inline-flex;
+    border-radius: 100px;
+    border: 1px solid $green;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 20px;
+    margin-top: 25px;
+    text-decoration: none;
+    font-weight: bold;
+	font-size: 16px;
+}
+.btn:hover {
+	background-color: lighten($green, 10%);
+}
+a {
+    transition: all .23s ease-in;
+    text-decoration: none;
+    color: $green;
+}
+
+.section-title {
+	position: relative;
+	font-size: 48px;
+    font-weight: bold;
+    line-height: 1.15;
+}
+.section-title::before {
+	content: "";
+	background-size: contain!important;
+	width: 100%;
+	display: block;
+	margin-bottom: 5px;
+}
+.section-title.square-circle::before{	
+	background: url(assets/images/square-circle.svg) no-repeat;	
+	height: 47px;
+}
+.section-title.triangle-square::before{
+	background: url(assets/images/triangle-square.svg) no-repeat;
+	height: 52px;
+}

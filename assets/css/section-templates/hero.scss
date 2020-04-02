@@ -40,3 +40,15 @@
 	z-index: 3;
 	background-size: cover;
 }
+
+.hero::before {
+	content: "";
+	position: absolute;
+	bottom: 60px;
+	right: 0;
+    height: 240px;
+    width: 151px;
+	background: url(assets/images/triangle-orange.svg) no-repeat;
+	z-index: 39;
+	background-size: cover;
+}

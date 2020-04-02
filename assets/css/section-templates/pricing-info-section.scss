@@ -16,6 +16,38 @@
 		    padding-right: 30px;
 		    margin-right: 30px;
   		}
+
+  		.pricing-info {
+			p,
+			.small {
+				color: rgba($primary, .8);
+			}
+			p {
+				font-size: 15px;
+				margin-bottom: 15px;
+			}
+			.small {
+				font-size: 14px;
+			}
+
+			h4 {
+				font-size: 20px;
+  				font-weight: 600;
+  				margin-bottom: 20px;
+  				line-height: 1;
+
+  				span.price {
+  					color: $blue;
+  				}
+			}
+
+			hr {
+				display: block;
+				height: 1px;
+				border-top:1px solid rgba(0, 0, 0, 0.05);
+				margin-bottom: 20px;
+			}
+  		}
 	}
 
 }

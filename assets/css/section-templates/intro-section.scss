@@ -21,3 +21,16 @@
 		background-position: center!important;
 	}
 }
+
+.intro-section::before {
+	content: "";
+	position: absolute;
+	bottom: -80px;
+	left: 0;
+    height: 240px;
+    width: 130px;
+	background: url(assets/images/square-blue.svg) no-repeat;
+	z-index: 39;
+	background-size: cover;
+	background-position: right;
+}

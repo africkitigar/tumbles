@@ -21,6 +21,20 @@
 
 				<div class="header-top">
 					<div class="container flex flex-space-between">
+						 <!--mob button-->
+						<div class="mob-menu-bar desktop-hide" onclick="myFunction(this)">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</div>
+
+						<script>
+							function myFunction(x) {
+								x.classList.toggle("change");
+							}
+						</script>
+						<!--/mob button-->
+
 						<div class="header-top_left flex flex-vertical-center">
 							<!-- logo -->
 							<div class="logo">
@@ -30,21 +44,21 @@
 							</div>
 							<!-- /logo -->
 
-							<span class="phone">								
+							<span class="phone mobile-hide">
 								<a href="tel:+18334967836"><i class="fas fa-phone-alt"></i> +1 833 496 7836</a>
 							</span>
 
-							<span class="email">								
+							<span class="email mobile-hide">
 								<a href="mailto:info@website.com"><i class="fas fa-envelope"></i> info@website.com</a>
 							</span>
 
-							<span class="location">
+							<span class="location mobile-hide">
 								<a href="#"><i class="fas fa-globe-americas"></i> Our location</a>
 							</span>
 						</div><!-- /header-top_left -->
 
 						<div class="header-top_right flex flex-vertical-center">
-							<div class="socials">
+							<div class="socials mobile-hide">
 								<a href="#" target="_blank">
 									<i class="fab fa-facebook-square"></i>
 								</a>
@@ -56,7 +70,7 @@
 								</a>
 							</div><!-- socials -->
 
-							<div class="my-account">
+							<div class="my-account mobile-hide">
 								<a href="#">My Account</a>
 							</div>
 
@@ -80,7 +94,16 @@
 						<nav>
 							<ul class="flex">
 								<li><a href="">Calendar</a></li>
-								<li><a href="">Gym Classes</a></li>
+								<li class="has-children">
+									<a href="">Gym Classes</a>
+									<div class="mega-menu">
+										<ul class="sub-menu">
+											<li><a href="#">Parent / Child  (4 mo - 3 y)</a></li>
+											<li><a href="#">Preschool Classes (4-6 y)</a></li>
+											<li><a href="#">Grade School Classes (7-12 y)</a></li>
+										</ul>
+									</div>
+								</li>
 								<li><a href="">STEAM Classes</a></li>
 								<li><a href="">Parties & Camps</a></li>
 								<li><a href="">Tumble Zone</a></li>
@@ -90,33 +113,12 @@
 								<li><a href="" class="btn">Try us out</a></li>
 							</ul>
 						</nav>
+
 					</div>
-				</div><!-- header-top -->
+				</div><!-- header-bottom -->
 
-				<div class="container flex flex-space-between flex-vertical-center">
+				<img src="<?php echo $base_url; ?>/assets/images/header-waves.svg"  class="header-waves mobile-hide">
 
-
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-
-					</nav>
-					<!-- /nav -->
-
-				     <!--mob button-->
-					<div class="mob-menu-bar" onclick="myFunction(this)">
-						<div class="bar1"></div>
-						<div class="bar2"></div>
-						<div class="bar3"></div>
-					</div>
-
-					<script>
-						function myFunction(x) {
-							x.classList.toggle("change");
-						}
-					</script>	
-					<!--/mob button-->	
-										
-				</div><!-- /container -->
 			</header>
 			<!-- /header -->
 	

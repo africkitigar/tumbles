@@ -7,9 +7,9 @@
       				 MOBILE MENU
       \*------------------------------------*/
       //open mobile sidebar
-      $('#mob-menu-bar').on('click', function () {
+      $('.mob-menu-bar').on('click', function () {
         $(this).toggleClass('open');
-        $('.mobile-header nav').toggleClass('open');
+        $('.header-bottom').toggleClass('menu-open');
       }); //mob submenus
 
       $('.side-nav .menu-item-has-children').click(function (e) {
@@ -20,6 +20,11 @@
       				 END OF MOBILE MENU
       \*------------------------------------*/
 
+      $("header li.has-children").hover(function () {
+        $('.header-waves').addClass("submmenu-active");
+      }, function () {
+        $('.header-waves').removeClass("submmenu-active");
+      });
       /*------------------------------------*\
                BOTTOM TO TOP ARROW
       \*------------------------------------*/

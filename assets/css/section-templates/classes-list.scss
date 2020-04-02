@@ -102,3 +102,16 @@
 	background-position: right;
 	z-index: -1;
 }
+
+
+
+
+/***** RESPONSIVE ******/
+@media only screen and (max-width:870px) {
+	.classes-list_items {
+		.classes-list_item{
+			max-width: 100%!important;
+			flex: 1 1 100%!important;
+		}
+	}
+}

@@ -67,6 +67,7 @@ a {
 	font-size: 48px;
     font-weight: bold;
     line-height: 1.15;
+    z-index:49;
 }
 .section-title::before {
 	content: "";
@@ -86,4 +87,14 @@ a {
 .section-title.circle-triangle::before{
 	background: url(assets/images/circle-triangle.svg) no-repeat;
 	height: 52px;
+}
+.section-title.star::before{
+	background: url(assets/images/star.svg) no-repeat;
+	height: 95px;
+}
+
+@media only screen and (max-width:1024px) {
+	h2.section-title {
+		font-size: 33px;
+	}
 }

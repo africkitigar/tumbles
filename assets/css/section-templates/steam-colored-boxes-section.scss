@@ -1,0 +1,82 @@
+.steam-colored-boxes-section {
+	position: relative;
+	font-size: 18px;
+
+	p {
+		opacity: .8;
+	}
+
+	img {
+		margin: 30px 0 50px;
+	}
+
+	.steam-colored-boxes {
+		padding:100px 20px 20px 100px;
+		text-align: center;
+
+		.colored-box {
+			position: relative;
+			margin-bottom: 50px;
+			border-radius: 10px;
+			padding: 15px 30px;
+			border: 3px solid;
+
+			h3 {
+				font-size: 30px;
+				font-weight: bold;
+				margin-bottom: 12px;
+			}
+
+			p {
+				font-weight: 600;
+				margin-bottom: 0;
+			}
+		}
+
+		.colored-box::after {
+			content: "";
+			position: absolute;
+			width: 2px;
+			height: 50px;
+			background: rgba($grey, .6);
+			bottom: -53px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.colored-box:last-child::after {
+			display: none;
+		}
+
+		.colored-box:nth-child(1) {
+			border-color: rgba(#9fd396, .36);
+			background-color: rgba(#ddf1d9, .36);
+		}
+
+		.colored-box:nth-child(2) {
+			border-color: rgba(#ddbca7, .36);
+			background-color:rgba(#fae3d2, .36);
+		}
+
+		.colored-box:nth-child(3) {
+			border-color: rgba(#e3b0c7, .36);
+			background-color:rgba(#fce2ee, .36);
+		}
+
+		.colored-box:nth-child(4) {
+			border-color: rgba(#8bcec8, .36);
+			background-color:rgba(#dcf4f1, .36);
+		}
+
+		.colored-box:nth-child(5) {
+			border-color: rgba(#dbd584, .36);
+			background-color:rgba(#fffbb2, .36);
+		}
+
+		.colored-box:nth-child(6) {
+			border-color: rgba(#71b6cb, .36);
+			background-color:rgba(#d8f4fd, .36);
+		}
+	}
+
+}

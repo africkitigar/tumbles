@@ -25,7 +25,7 @@
 				<img src="<?php echo $base_url; ?>/assets/images/bulb.svg">
 			</div>
 
-			<h3 class="text-center">Body</h3>
+			<h3 class="text-center">Mind</h3>
 
 			<ol>
 				<li><span>Flexibility</span></li>
@@ -40,7 +40,7 @@
 				<img src="<?php echo $base_url; ?>/assets/images/bulb.svg">
 			</div>
 
-			<h3 class="text-center">Body</h3>
+			<h3 class="text-center">Socials</h3>
 
 			<ol>
 				<li><span>Flexibility</span></li>

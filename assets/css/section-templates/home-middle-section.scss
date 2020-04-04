@@ -1,0 +1,161 @@
+.home-middle-section {
+	position: relative;
+	background-color: $lazio-blue;
+	margin: 200px 0;
+	padding: 50px 0;
+
+	.col6.steam-classes {
+		padding-right: 70px;
+
+		.badge-price {
+			height: 145px;
+		}
+	}
+
+	.text-box {
+		flex: 1;
+		margin-right: 18px;
+
+		p {
+			font-size: 18px;
+		}
+
+		ul {
+			list-style: none;
+
+			li {
+				position: relative;
+				font-size: 18px;
+				line-height: 1.6;
+				margin-bottom: 10px;
+			}
+
+			li::before {
+				content: "";
+				display: inline-block;
+				background: $green;
+				width: 7px;
+				height: 7px;
+				border-radius: 100%;
+				position: relative;
+				top: -2px;
+				margin-right: 12px;
+			}
+		}
+	}
+
+	.img-wrap {
+		.badge-price {
+			color: #fff;
+			background: url(assets/images/badge.svg) no-repeat;
+			background-size: contain;
+			padding-top: 25px;
+			width: 140px;
+			height: 219px;
+
+			.small {
+				font-size: 13px;
+			}
+
+			.price {
+				font-size: 30px;
+
+				span:first-child {
+					font-size:20px;
+					margin-right: 1px;
+				}
+
+				span:last-child {
+					font-size:17px;
+					margin-left: 1px;
+				}
+			}
+		}
+
+	}
+
+	.working-time {
+		border-top: 1px solid rgba($grey, .3);
+		li {
+			display: flex;
+			justify-content: space-between;
+			font-size: 20px;
+  			font-weight: bold;
+  			border-bottom: 1px dashed rgba($grey, .3);
+  			padding: 20px 0;
+  			line-height: 1;
+  			margin-bottom: 0!important;
+
+  			span {
+  				font-weight: 400;
+  				font-size: 16px;
+  			}
+		}
+
+		li::before {
+			display: none!important;
+		}
+	}
+
+
+	.map {
+		box-shadow: 0 20px 30px 0 rgba(0,0,0,0.05);
+		margin-bottom: 35px;
+
+		img {
+			display: block;
+		}
+	}
+
+	.contact-data {
+		a {
+			color: $primary;
+		}
+
+		.get-directions {
+			color: $green;
+			margin-left: auto;
+			text-decoration: underline;
+		}
+
+		i {
+			font-size: 23px;
+			margin-right: 10px;
+		}
+
+		.address {
+			margin-bottom: 15px;
+		}
+
+		.address, .phone, .email {
+			display: flex;
+			align-items: center;
+		}
+
+		.phone {
+			margin-right: 25px;
+		}
+	}
+}
+
+
+.home-middle-section::before ,
+.home-middle-section::after {
+	content: "";
+	background: url(assets/images/home/blue-shape.svg) no-repeat;
+	background-size: cover;
+	left: 0;
+	right: 0;
+	width: 100%;
+	position: absolute;
+	height: 115px;
+}
+.home-middle-section::before {
+	background-position: top;
+	top: -112px;
+}
+
+.home-middle-section::after {
+	background-position: bottom;
+	bottom: -112px;
+}

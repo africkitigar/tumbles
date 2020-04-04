@@ -95,7 +95,7 @@
 							<ul class="flex">
 								<li><a href="">Calendar</a></li>
 								<li class="has-children">
-									<a href="">Gym Classes</a>
+									<a href="gym-classes.php">Gym Classes</a>
 									<div class="mega-menu">
 										<ul class="sub-menu">
 											<li><a href="#">Parent / Child  (4 mo - 3 y)</a></li>
@@ -104,7 +104,7 @@
 										</ul>
 									</div>
 								</li>
-								<li><a href="">STEAM Classes</a></li>
+								<li><a href="steam-classes.php">STEAM Classes</a></li>
 								<li><a href="">Parties & Camps</a></li>
 								<li><a href="">Tumble Zone</a></li>
 								<li><a href="">About Us</a></li>

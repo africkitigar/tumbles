@@ -26,6 +26,26 @@
       });
 
       /*------------------------------------*\
+               BOXES ACCORDIONS
+      \*------------------------------------*/
+      $('.trigger-accordion-box').click(function(){
+          $(this).parent().siblings().find('.accordion-box_content').slideUp();
+          $(this).prev().slideToggle();
+      });
+
+
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value;
+
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
+
+      $('#myRange').on("input", function() {
+      $('.output').val(this.value +",000  $" );
+      }).trigger("change");
+      /*------------------------------------*\
                BOTTOM TO TOP ARROW
       \*------------------------------------*/
 

@@ -1,0 +1,75 @@
+.colored-text-section {
+	position: relative;
+	background-color: $lazio-blue;
+	margin: 200px 0;
+	padding: 50px 0;
+
+	.section-title::before {
+		background-position:center!important;
+	}
+
+	.text-intro {
+		max-width: 620px;
+		margin:0 auto 60px;
+	}
+
+
+	ul {
+		list-style: none;
+
+		li {
+			position: relative;
+			display: flex;
+			font-size: 22px;
+			font-weight: 600;
+			line-height: 1.32;
+			border-bottom: 1px solid rgba($grey, .2);
+			padding: 15px 0;
+
+			span {
+				flex: 1;
+			}
+		}
+
+		li::before {
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			content: "\f00c";
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 100%;
+			background-color: $blue;
+			width: 57px;
+			height: 57px;
+			color:#fff;
+			margin-right: 23px;
+		}
+
+		li:last-child {
+			border-bottom: none;
+		}
+	}
+}
+
+
+.colored-text-section::before ,
+.colored-text-section::after {
+	content: "";
+	background: url(assets/images/home/blue-shape.svg) no-repeat;
+	background-size: cover;
+	left: 0;
+	right: 0;
+	width: 100%;
+	position: absolute;
+	height: 115px;
+}
+.colored-text-section::before {
+	background-position: top;
+	top: -112px;
+}
+
+.colored-text-section::after {
+	background-position: bottom;
+	bottom: -112px;
+}

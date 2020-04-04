@@ -1,6 +1,6 @@
 .hero {
 	position: relative;
-	max-height: 700px;
+	max-height: 750px;
 
 	img {
 		display: block;
@@ -33,7 +33,7 @@
 	content: "";
 	position: absolute;
 	left: 0;
-	bottom: 0;
+	bottom: -25px;;
 	right: 0;
 	height: 215px;
 	background: url(assets/images/hero-bottom.svg) no-repeat;

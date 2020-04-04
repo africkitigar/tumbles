@@ -2,7 +2,8 @@
 	position:relative;
 	display: flex;
 	justify-content: center;
-	padding-top: 330px;
+	padding: 50px 0;
+	margin: 80px 0;
 
 	.info-card {
 		border-radius: 10px;
@@ -50,7 +51,7 @@
   		}
 	}
 
-}
+}/*
 .pricing-info-section::before {
 	content: "";
 	top: 0;
@@ -62,4 +63,26 @@
     width: 100%;
     position: absolute;
     z-index: -1;
+}*/
+
+.pricing-info-section::before ,
+.pricing-info-section::after {
+	content: "";
+	background: url(assets/images/blue-shape-pricing-info.svg) no-repeat;
+	background-size: cover;
+	left: 0;
+	right: 0;
+	width: 100%;
+	position: absolute;
+	height: 230px;
+	z-index: -1;
+}
+.pricing-info-section::before {
+	background-position: top;
+	top: -112px;
+}
+
+.pricing-info-section::after {
+	background-position: bottom;
+	top: 88px;
 }

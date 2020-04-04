@@ -1,6 +1,6 @@
 .hero {
 	position: relative;
-	max-height: 750px;
+	height: 80vh;
 
 	img {
 		display: block;
@@ -18,7 +18,7 @@
 		z-index: 1;
 		display: flex;
 		justify-content: center;
-		padding-top: 95px;
+		padding: 95px 20px 20px;
 		background-color: rgba(0,0,0,.33);
 
 		h1 {
@@ -33,7 +33,7 @@
 	content: "";
 	position: absolute;
 	left: 0;
-	bottom: -25px;;
+	bottom: -2px;;
 	right: 0;
 	height: 215px;
 	background: url(assets/images/hero-bottom.svg) no-repeat;
@@ -51,4 +51,24 @@
 	background: url(assets/images/triangle-orange.svg) no-repeat;
 	z-index: 39;
 	background-size: cover;
+}
+
+@media only screen and (max-width:768px) {
+	.hero {
+		h1 {
+			font-size: 33px;
+
+		}
+	}
+
+	.hero::after {
+		height: 100px!important;
+	}
+
+	body .hero::before {
+		bottom: 0px;
+	    right: 0;
+	    height: 149px;
+	    width: 103px;
+	}
 }

@@ -98,3 +98,20 @@ a {
 		font-size: 33px;
 	}
 }
+
+
+select {
+				-webkit-appearance: none;
+			  -moz-appearance: none;
+			  appearance: none;
+			    height: 45px;
+ 				 border-radius: 10px;
+				border: solid 1px #ccd2de;
+				background: #fff url('assets/images/chevron-down.svg') no-repeat 95% center;
+				padding: 10px 40px 10px 20px;
+			}
+
+			select:focus {
+				outline: none!important;
+				border-color: $green;
+			}

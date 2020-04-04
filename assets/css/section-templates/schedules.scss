@@ -48,6 +48,35 @@
 		align-items: flex-end;
 	}
 
+
+	.select-session {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 30px 0;
+
+		.share-schedule {
+			font-family: 'Oduda';
+			font-size: 20px;
+			font-weight: 600;
+			color: $green;
+			cursor: pointer;
+		}
+
+		.select-session_wrap {
+			span {
+				display: block;
+				font-family: 'Oduda';
+				font-size: 20px;
+			    font-weight: 600;
+			    margin-bottom: 10px;
+			}
+
+
+		}
+
+	}
+
 	.range-slider {
 		width: 400px;
 		margin: 30px 0;

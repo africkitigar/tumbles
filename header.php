@@ -98,7 +98,7 @@
 									<a href="gym-classes.php">Gym Classes</a>
 									<div class="mega-menu">
 										<ul class="sub-menu">
-											<li><a href="#">Parent / Child  (4 mo - 3 y)</a></li>
+											<li><a href="parent-child-classes.php">Parent / Child  (4 mo - 3 y)</a></li>
 											<li><a href="#">Preschool Classes (4-6 y)</a></li>
 											<li><a href="#">Grade School Classes (7-12 y)</a></li>
 										</ul>

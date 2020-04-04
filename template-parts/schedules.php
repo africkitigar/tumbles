@@ -52,6 +52,22 @@
 				 <output for="range" class="output"></output>
 				<p>Value: <span id="demo"></span></p>
 			</div> <!-- range-slider -->
+
+			<div class="select-session">
+				<div class="share-schedule">
+					<i class="fas fa-share-alt"></i> Share this Schedule
+				</div>
+
+				<div class="select-session_wrap">
+					<span>Select Session:</span>
+					<select name="" id="session">
+						<option value="">Jan. 13, 2020 - May 24, 2020</option>
+						<option value="">Jan. 13, 2020 - May 24, 2020</option>
+						<option value="">Jan. 13, 2020 - May 24, 2020</option>
+					</select>
+				</div>
+
+			</div><!-- select-session -->
 		</div>
 	</div><!-- container -->
 </div>

@@ -1,0 +1,116 @@
+.body-content.contact-us-page {
+	background-color: $lazio-blue;
+	padding: 40px 0;
+	position: relative;
+}
+.body-content.contact-us-page::before {
+	content: "";
+	position: absolute;
+	bottom: 80px;
+	right: 0;
+    height: 300px;
+    width: 130px;
+	background: url(assets/images/triangle-double-orange.svg) no-repeat;
+	z-index: 39;
+	background-size: cover;
+	background-position: left;
+}
+.contact-form {
+	margin: 84px auto;
+
+	form {
+		background-color: #fff;
+		padding: 30px;
+		border-radius: 20px;
+		box-shadow: 0 20px 30px 0 rgba(0,0,0,0.05);
+
+		.btn {
+			margin-top: 0;
+			cursor: pointer;
+		}
+	}
+
+	.col6 {
+		.small {
+			font-size: 13px;
+			margin-bottom: 25px;
+			opacity: .5;
+		}
+
+		img {
+			object-fit: contain;
+			width: 100%;
+			display: block;
+			border-radius: 20px;
+			margin-bottom: 35px;
+		}
+
+		.contact-data {
+			> div {
+				margin-bottom: 20px;
+			}
+
+			a {
+				color: $primary;
+				font-size: 16px;
+			}
+
+			i {
+				font-size: 23px;
+				margin-right: 10px;
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				width: 27px;
+			}
+
+			span {
+				flex: 1;
+			}
+		}
+	}
+}
+
+input, textarea {
+	font-family: 'Montserrat', sans-serif;
+	border-radius: 10px;
+    border: solid 1px #ccd2de;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 13px 15px;
+    -webkit-appearance: none;
+    font-size: 15px;
+}
+input:focus, textarea:focus {
+	outline: none!important;
+	border: 1px solid $green;
+}
+button {
+	-webkit-appearance: none;
+}
+.form-item {
+	margin-bottom: 30px;
+}
+
+label {
+	display: block;
+	font-family: 'Oduda';
+  	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+input::placeholder,
+textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba($primary, .69);
+  opacity: .69; /* Firefox */
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgba($primary, .69);
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgba($primary, .69);
+}

@@ -1,10 +1,13 @@
 .intro-section {
 	position: relative;
+	padding:0 20px;
 
 	.intro-section_inner {
 		max-width: 620px;
 		margin: 0 auto;
 		text-align: center;
+		z-index:40;
+		position:relative;
 
 		p {
 			font-size: 18px;

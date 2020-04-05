@@ -29,12 +29,15 @@
                BOXES ACCORDIONS
       \*------------------------------------*/
       $('.trigger-accordion-box').click(function(){
+          $(this).find('i').toggleClass('fa-chevron-up');
+          var $el = $(this).find('b');
+          $el.text($el.text() == "View Less" ? "View More": "View Less");
           $(this).parent().siblings().find('.accordion-box_content').slideUp();
           $(this).prev().slideToggle();
       });
 
 
-      var slider = document.getElementById("myRange");
+      /*var slider = document.getElementById("myRange");
       var output = document.getElementById("demo");
       output.innerHTML = slider.value;
 
@@ -44,7 +47,7 @@
 
       $('#myRange').on("input", function() {
       $('.output').val(this.value +",000  $" );
-      }).trigger("change");
+      }).trigger("change");*/
       /*------------------------------------*\
                BOTTOM TO TOP ARROW
       \*------------------------------------*/

@@ -10,6 +10,22 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="style.min.css">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
+		    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          plugins: [ 'dayGrid' ]
+        });
+
+        calendar.render();
+      });
+
+    </script>
 	</head>
 	<body >
 
@@ -99,16 +115,16 @@
 									<div class="mega-menu">
 										<ul class="sub-menu">
 											<li><a href="parent-child-classes.php">Parent / Child  (4 mo - 3 y)</a></li>
-											<li><a href="#">Preschool Classes (4-6 y)</a></li>
-											<li><a href="#">Grade School Classes (7-12 y)</a></li>
+											<li><a href="preschool-classes.php">Preschool Classes (4-6 y)</a></li>
+											<li><a href="grade-school.php">Grade School Classes (7-12 y)</a></li>
 										</ul>
 									</div>
 								</li>
 								<li><a href="steam-classes.php">STEAM Classes</a></li>
-								<li><a href="">Parties & Camps</a></li>
-								<li><a href="">Tumble Zone</a></li>
-								<li><a href="">About Us</a></li>
-								<li><a href="">Contact Us</a></li>
+								<li><a href="parties-camps.php">Parties & Camps</a></li>
+								<li><a href="tumble-zone.php">Tumble Zone</a></li>
+								<li><a href="about-us.php">About Us</a></li>
+								<li><a href="contact-us.php">Contact Us</a></li>
 								<li><a href="">Blog</a></li>
 								<li><a href="" class="btn">Try us out</a></li>
 							</ul>
@@ -121,6 +137,11 @@
 
 			</header>
 			<!-- /header -->
-	
-
-			<div class="body-content">
+			<?php $file_name =  basename( $_SERVER['PHP_SELF'] ); ?>
+			<?php if ( $file_name == 'contact-us.php' ): ?>
+				<div class="body-content contact-us-page">
+			<?php elseif( $file_name == 'index.php' ): ?>
+				<div class="body-content home">
+			<?php else: ?>
+				<div class="body-content">
+			<?php endif; ?>

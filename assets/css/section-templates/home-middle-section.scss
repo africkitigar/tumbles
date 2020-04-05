@@ -44,14 +44,28 @@
 		}
 	}
 
+	.separator-line {
+		margin: 50px 0;
+		display: block;
+	}
+
 	.img-wrap {
+		.badge-price.badge-long {
+			background: url(assets/images/badge2.svg) no-repeat;
+		}
 		.badge-price {
 			color: #fff;
 			background: url(assets/images/badge.svg) no-repeat;
 			background-size: contain;
-			padding-top: 25px;
 			width: 140px;
 			height: 219px;
+			padding: 25px 20px;
+
+			.separator-line-small {
+				border-bottom: 1px dashed #fff;
+				margin-bottom: 8px;
+
+			}
 
 			.small {
 				font-size: 13px;

@@ -34,13 +34,19 @@
 				</div><!-- /text-box -->
 
 				<div class="img-wrap">
-					<div class="badge-price text-center">
+					<div class="badge-price text-center badge-long">
 						<div class="small">Members</div>
+						<div class="price"><span>$</span>350</div>
+						<div class="separator-line-small"></div>
+						<div class="small">Non Members</div>
 						<div class="price"><span>$</span>380</div>
 					</div>
 				</div>
 			</div><!-- /col6 -->
 
+			<div class="col12">
+				<img src="<?php echo $base_url; ?>/assets/images/separtor-wave-line.svg"  class="separator-line">
+			</div>
 
 			<div class="col6 flex">
 				<div class="text-box">

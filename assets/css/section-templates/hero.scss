@@ -53,6 +53,32 @@
 	background-size: cover;
 }
 
+.hero.short-hero::after {
+	background: url(assets/images/short-hero-bottom.svg) no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	bottom: -2px;;
+	right: 0;
+	height: 34px;
+	width: 100%;
+}
+.hero.short-hero {
+	height: 200px;
+
+	.hero_inner {
+		padding-top: 15px;
+		align-items: center;
+	}
+}
+.hero.short-hero::before {
+	bottom: 0;
+	height: 130px;
+	width: 90px;
+}
+
+
+
 @media only screen and (max-width:768px) {
 	.hero {
 		h1 {

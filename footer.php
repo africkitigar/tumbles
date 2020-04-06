@@ -98,9 +98,9 @@
 					<div class="container flex flex-space-between">
 						<ul class="footer-top-menu">
 							<li>
-								<a href="#">Gym Classes</a>
+								<a href="gym-classes.php">Gym Classes</a>
 								<ul class="submenu">
-									<li><a href="#">Parent / Child </a></li>
+									<li><a href="">Parent / Child </a></li>
 									<li><a href="#">Pre-K Gymnastics & Sports Prep</a></li>
 									<li><a href="#">Grade School Gymnastics & Sports Prep</a></li>
 								</ul>
@@ -114,14 +114,14 @@
 						</ul>
 
 						<ul class="footer-top-menu">
-							<li><a href="#">Refer a friend</a></li>
-							<li><a href="#">Careers</a></li>
-							<li><a href="#">About Us</a></li>
+							<li><a href="refer-a-friend.php">Refer a friend</a></li>
+							<li><a href="jobs.php">Careers</a></li>
+							<li><a href="about-us.php">About Us</a></li>
 						</ul>
 
 						<ul class="footer-top-menu">
 							<li><a href="#">Blog</a></li>
-							<li><a href="#">Contact us</a></li>
+							<li><a href="contact-us.php">Contact us</a></li>
 							<li><a href="#">Own a gym</a></li>
 						</ul>
 					</div><!-- /container -->
@@ -176,6 +176,7 @@
 		  crossorigin="anonymous"></script>
 		 <script src="<?php echo $base_url; ?>/assets/js/swiper.min.js"></script>
 		 <script src="<?php echo $base_url; ?>/assets/js/custom.min.js"></script>
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
 	</body>
 </html>
 

@@ -37,17 +37,41 @@
       });
 
 
-      /*var slider = document.getElementById("myRange");
-      var output = document.getElementById("demo");
-      output.innerHTML = slider.value;
+      /*------------------------------------*\
+               JOBS TABS
+      \*------------------------------------*/
+      $('.job-list li').click(function () {
+        var jobList = $(this).attr('id');
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.job-descriptions > div').removeClass('active');
+        $('.job-descriptions > div.' + jobList).addClass('active');
+      });
 
-      slider.oninput = function() {
-        output.innerHTML = this.value;
-      }
 
-      $('#myRange').on("input", function() {
-      $('.output').val(this.value +",000  $" );
-      }).trigger("change");*/
+$("#myRange").ionRangeSlider({
+    type: 'double',
+    min: 0,
+    max: 10,
+    from: 2,
+    to: 8,
+    grid: true,
+    grid_snap: true,
+
+});
+ console.log($('.irs-from').text());
+$('.irs').on( 'click', function(){
+    var rangeFrom = $('.irs-from').text();
+
+    if ( rangeFrom < 2 ) {
+      $('.prefix__cls-1').css('fill', '#802b7c' );
+    } else if ( rangeFrom > 5) {
+      $('.prefix__cls-2').css('fill', '#802b7c' );
+    } else {
+      $('.prefix__cls-1').css('fill', '#e9e9f4' );
+    }
+  //  alert(rangeFrom);
+});
+
       /*------------------------------------*\
                BOTTOM TO TOP ARROW
       \*------------------------------------*/

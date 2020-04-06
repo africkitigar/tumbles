@@ -15,14 +15,17 @@
 			text-align: center;
 			background-color: #fff;
 			margin-bottom: 20px;
-			break-inside: avoid-column;
-			z-index: 3;
 			position: relative;
 
 			.accordion-box_content {
 				display: none;
-				position: relative;
-				z-index: 1;
+				position: absolute;
+			    z-index: 22;
+			    left: 0;
+			    right: 0;
+			    padding: 20px 25px;
+			    background-color: #fff;
+			    box-shadow: 0 20px 30px 0 rgba(0,0,0,0.05);
 			}
 
 			h4 {
@@ -32,11 +35,13 @@
 				line-height: 1.5;
 			}
 
-			.trigger-accordion-box:hover {
+			.trigger-accordion-box:hover,
+			.close-accordion-box:hover {
 				color: darken($green, 10%);
 			}
 
-			.trigger-accordion-box {
+			.trigger-accordion-box,
+			.close-accordion-box {
 				color: $green;
 				font-size: 14px;
 				cursor: pointer;
@@ -59,6 +64,7 @@
 	background-color: $lazio-blue;
 	margin: 200px 0;
 	padding: 50px 0;
+	position:relative;
 }
 .blue-shape-background::before ,
 .blue-shape-background::after {
@@ -84,7 +90,9 @@
 @media only screen and (min-width:1025px) {
 	.accordion-boxes-content {
 		.accordion-boxes {
-			column-count: 3;
+			display: grid;
+		    grid-column-gap: 20px;
+		    grid-template-columns: auto auto auto;
 		}
 	}
 }

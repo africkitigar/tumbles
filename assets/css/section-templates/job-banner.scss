@@ -1,0 +1,45 @@
+.jobs-banner-wrapper{
+	.jobs-banner {
+		box-shadow: 0 20px 30px 0 rgba(0,0,0,0.05);
+		background-color: $secondary;
+		color: #fff;
+		overflow: hidden;
+		border-radius: 30px;
+		height: 250px;
+
+		img {
+			object-fit: cover;
+			height: 100%;
+			width: 260px;
+		}
+
+		> .flex {
+			padding: 30px;
+
+			.jobs-banner_inner_text {
+				max-width: 650px;
+				h3 {
+					font-size: 48px;
+					line-height: 1.15;
+				}
+				p {
+					font-size: 20px;
+  					font-weight: 600;
+				}
+			}
+		}
+
+		.banner-btn {
+			background-color: #fff;
+			color: $green;
+			border-radius: 100px;
+			font-size: 18px;
+  			font-weight: 600;
+  			padding: 16px 30px;
+		}
+
+		.banner-btn:hover {
+			background-color: darken(#fff, 10%);
+		}
+	}
+}

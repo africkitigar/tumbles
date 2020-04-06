@@ -291,8 +291,9 @@ button.swiper-pagination-bullet{border:0;margin:0;padding:0;-webkit-box-shadow:n
 .meet-team .container .img-wrap{padding:20px 40px}
 .page-sections{position:relative;padding-top:150px}
 .page-sections .page-section{margin-bottom:150px}
-.page-sections .page-section .img-wrap{width:480px;overflow:hidden;border-top-left-radius:30px;border-top-right-radius:100px;border-bottom-right-radius:30px;border-bottom-left-radius:100px}
-.page-sections .page-section .img-wrap img{-o-object-fit:cover;object-fit:cover;width:100%;height:100%}
+.page-sections .page-section .img-wrap{width:480px;position:relative}
+.page-sections .page-section .img-wrap img{-o-object-fit:cover;object-fit:cover;width:100%;height:100%;border-top-left-radius:30px;border-top-right-radius:100px;border-bottom-right-radius:30px;border-bottom-left-radius:100px}
+.page-sections .page-section .img-wrap img.small-img{position:absolute;width:250px;height:235px;right:50px;-webkit-box-shadow:0 20px 30px 0 rgba(0,0,0,0.05);box-shadow:0 20px 30px 0 rgba(0,0,0,0.05);bottom:-154px}
 .page-sections .page-section .page-section_text{-webkit-box-flex:1;-ms-flex:1;flex:1}
 .page-sections .page-section .page-section_text h2{margin-bottom:5px}
 .page-sections .page-section .page-section_text h4{font-size:22px;font-weight:600;opacity:.8;line-height:1.33}
@@ -361,14 +362,14 @@ button.swiper-pagination-bullet{border:0;margin:0;padding:0;-webkit-box-shadow:n
 .accordion-boxes-content{position:relative}
 .accordion-boxes-content .section-title::before{background-position:center}
 .accordion-boxes-content .accordion-boxes{margin-top:60px;-webkit-column-gap:20px;-moz-column-gap:20px;column-gap:20px}
-.accordion-boxes-content .accordion-boxes .accordion-box{-webkit-box-shadow:0 20px 30px 0 rgba(0,0,0,0.05);box-shadow:0 20px 30px 0 rgba(0,0,0,0.05);padding:40px 30px 10px;text-align:center;background-color:#fff;margin-bottom:20px;-webkit-column-break-inside:avoid;-moz-column-break-inside:avoid;break-inside:avoid-column;z-index:3;position:relative}
-.accordion-boxes-content .accordion-boxes .accordion-box .accordion-box_content{display:none;position:relative;z-index:1}
+.accordion-boxes-content .accordion-boxes .accordion-box{-webkit-box-shadow:0 20px 30px 0 rgba(0,0,0,0.05);box-shadow:0 20px 30px 0 rgba(0,0,0,0.05);padding:40px 30px 10px;text-align:center;background-color:#fff;margin-bottom:20px;position:relative}
+.accordion-boxes-content .accordion-boxes .accordion-box .accordion-box_content{display:none;position:absolute;z-index:22;left:0;right:0;padding:20px 25px;background-color:#fff;-webkit-box-shadow:0 20px 30px 0 rgba(0,0,0,0.05);box-shadow:0 20px 30px 0 rgba(0,0,0,0.05)}
 .accordion-boxes-content .accordion-boxes .accordion-box h4{font-size:20px;font-weight:bold;margin-bottom:20px;line-height:1.5}
-.accordion-boxes-content .accordion-boxes .accordion-box .trigger-accordion-box:hover{color:#6a9934}
-.accordion-boxes-content .accordion-boxes .accordion-box .trigger-accordion-box{color:#84bf41;font-size:14px;cursor:pointer;-webkit-transition:all .23s ease-in;transition:all .23s ease-in}
-.accordion-boxes-content .accordion-boxes .accordion-box .trigger-accordion-box b{text-decoration:underline;font-weight:400}
-.accordion-boxes-content .accordion-boxes .accordion-box .trigger-accordion-box i{margin-left:7px}
-.blue-shape-background{background-color:#f4fcfe;margin:200px 0;padding:50px 0}
+.accordion-boxes-content .accordion-boxes .accordion-box .trigger-accordion-box:hover,.accordion-boxes-content .accordion-boxes .accordion-box .close-accordion-box:hover{color:#6a9934}
+.accordion-boxes-content .accordion-boxes .accordion-box .trigger-accordion-box,.accordion-boxes-content .accordion-boxes .accordion-box .close-accordion-box{color:#84bf41;font-size:14px;cursor:pointer;-webkit-transition:all .23s ease-in;transition:all .23s ease-in}
+.accordion-boxes-content .accordion-boxes .accordion-box .trigger-accordion-box b,.accordion-boxes-content .accordion-boxes .accordion-box .close-accordion-box b{text-decoration:underline;font-weight:400}
+.accordion-boxes-content .accordion-boxes .accordion-box .trigger-accordion-box i,.accordion-boxes-content .accordion-boxes .accordion-box .close-accordion-box i{margin-left:7px}
+.blue-shape-background{background-color:#f4fcfe;margin:200px 0;padding:50px 0;position:relative}
 .blue-shape-background::before,.blue-shape-background::after{content:"";background:url(assets/images/home/blue-shape.svg) no-repeat;background-size:cover;left:0;right:0;width:100%;position:absolute;height:115px}
 .blue-shape-background::before{background-position:top;top:-112px}
 .blue-shape-background::after{background-position:bottom;bottom:-112px}
@@ -409,6 +410,7 @@ table.class .class-name.last{border-bottom-left-radius:23px}
 .contact-form .col6 .contact-data a{color:#212a53;font-size:16px}
 .contact-form .col6 .contact-data i{font-size:23px;margin-right:10px;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:27px}
 .contact-form .col6 .contact-data span{-webkit-box-flex:1;-ms-flex:1;flex:1}
+.contact-form .col6 iframe{width:100%;height:500px;margin-bottom:20px;border-radius:20px}
 input,textarea{font-family:'Montserrat',sans-serif;border-radius:10px;border:solid 1px #ccd2de;background-color:#fff;width:100%;padding:13px 15px;-webkit-appearance:none;font-size:15px}
 input:focus,textarea:focus{outline:none !important;border:1px solid #84bf41}
 button{-webkit-appearance:none}
@@ -445,6 +447,20 @@ input::-ms-input-placeholder,textarea::-ms-input-placeholder{color:rgba(33,42,83
 .jobs-wrapper .job-descriptions>div{display:none}
 .jobs-wrapper .job-descriptions>div.active{display:block}
 .jobs-wrapper .job-descriptions ul{margin:20px 0 30px}
+.our-team{position:relative;margin:300px 0 100px}
+.our-team .section-title::before{background-position:center}
+.our-team p{max-width:830px;margin:0 auto}
+.our-team img{margin:40px auto 0;max-width:980px;border-top-right-radius:100px;border-top-left-radius:30px;border-bottom-left-radius:100px;border-bottom-right-radius:30px}
+.jobs-banner-wrapper .jobs-banner{-webkit-box-shadow:0 20px 30px 0 rgba(0,0,0,0.05);box-shadow:0 20px 30px 0 rgba(0,0,0,0.05);background-color:#009f8e;color:#fff;overflow:hidden;border-radius:30px;height:250px}
+.jobs-banner-wrapper .jobs-banner img{-o-object-fit:cover;object-fit:cover;height:100%;width:260px}
+.jobs-banner-wrapper .jobs-banner>.flex{padding:30px}
+.jobs-banner-wrapper .jobs-banner>.flex .jobs-banner_inner_text{max-width:650px}
+.jobs-banner-wrapper .jobs-banner>.flex .jobs-banner_inner_text h3{font-size:48px;line-height:1.15}
+.jobs-banner-wrapper .jobs-banner>.flex .jobs-banner_inner_text p{font-size:20px;font-weight:600}
+.jobs-banner-wrapper .jobs-banner .banner-btn{background-color:#fff;color:#84bf41;border-radius:100px;font-size:18px;font-weight:600;padding:16px 30px}
+.jobs-banner-wrapper .jobs-banner .banner-btn:hover{background-color:#e6e5e5}
+.full-width-img-with-text{margin:84px auto;max-width:1000px;padding:20px;text-align:center}
+.full-width-img-with-text p{max-width:900px;margin:30px auto 0}
 @media only screen and (min-width:480px){.col3{-webkit-box-flex:1;-ms-flex:1 1 50%;flex:1 1 50%;max-width:50%}
 }@media only screen and (min-width:768px){.col1{-webkit-box-flex:1;-ms-flex:1 1 8.33%;flex:1 1 8.33%;max-width:8.33%}
 .col2{-webkit-box-flex:1;-ms-flex:1 1 16.66%;flex:1 1 16.66%;max-width:16.66%}
@@ -458,7 +474,7 @@ input::-ms-input-placeholder,textarea::-ms-input-placeholder{color:rgba(33,42,83
 .col11{-webkit-box-flex:1;-ms-flex:1 1 91.63%;flex:1 1 91.63%;max-width:91.63%}
 .col12{-webkit-box-flex:1;-ms-flex:1 1 100%;flex:1 1 100%;max-width:100%}
 }@media only screen and (min-width:1024px){.col3{-webkit-box-flex:1;-ms-flex:1 1 25%;flex:1 1 25%;max-width:25%}
-}@media only screen and (min-width:1025px){.accordion-boxes-content .accordion-boxes{-webkit-column-count:3;-moz-column-count:3;column-count:3}
+}@media only screen and (min-width:1025px){.accordion-boxes-content .accordion-boxes{display:grid;grid-column-gap:20px;grid-template-columns:auto auto auto}
 }@media only screen and (min-width:1140px){.desktop-hide{display:none !important}
 }@media only screen and (max-width:1180px){.container,.container-narrow{padding:0 20px}
 }@media only screen and (max-width:1140px){.mobile-hide{display:none !important}

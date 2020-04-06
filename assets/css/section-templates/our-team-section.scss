@@ -1,0 +1,22 @@
+.our-team {
+	position: relative;
+	margin: 300px 0 100px;
+
+	.section-title::before {
+		background-position:center;
+	}
+
+	p {
+		max-width: 830px;
+		margin: 0 auto;
+	}
+
+	img {
+		margin: 40px auto 0;
+		max-width: 980px;
+		border-top-right-radius: 100px;
+		border-top-left-radius: 30px;
+		border-bottom-left-radius: 100px;
+		border-bottom-right-radius: 30px;
+	}
+}

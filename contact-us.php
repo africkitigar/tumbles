@@ -24,7 +24,7 @@
 
 				<div class="form-item">
 					<label for="message">Message</label>
-					<textarea name="message" id="message" cols="30" rows="10" placeholder="You can write your message here"></textarea>
+					<textarea name="message" id="message" cols="30" rows="5" placeholder="You can write your message here"></textarea>
 				</div>
 
 				<div class="text-center">
@@ -33,7 +33,7 @@
 			</form>
 		</div>
 		<div class="col6">
-			<img src="<?php echo $base_url; ?>/assets/images/dynamic/contact-map.png"  class="header-waves mobile-hide">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4676.6726506298055!2d-84.275041776131!3d34.020599482664636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5755528f6b305%3A0xcef64f04a8aa6ca0!2zMzAwNSBPbGQgQWxhYmFtYSBSZCAjMjAsIEFscGhhcmV0dGEsIEdBIDMwMDIyLCDQodGY0LXQtNC40ZrQtdC90LUg0JTRgNC20LDQstC1!5e0!3m2!1ssr!2srs!4v1586194674646!5m2!1ssr!2srs" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
 			<div class="contact-data">
 				<div class="address flex">

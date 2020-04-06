@@ -29,11 +29,21 @@
                BOXES ACCORDIONS
       \*------------------------------------*/
       $('.trigger-accordion-box').click(function(){
-          $(this).find('i').toggleClass('fa-chevron-up');
-          var $el = $(this).find('b');
-          $el.text($el.text() == "View Less" ? "View More": "View Less");
+         // $(this).find('i').toggleClass('fa-chevron-up');
+          //var $el = $(this).find('b');
+          //$el.text($el.text() == "View Less" ? "View More": "View Less");
           $(this).parent().siblings().find('.accordion-box_content').slideUp();
-          $(this).prev().slideToggle();
+         // $(this).prev().slideToggle();
+          $(this).prev().slideDown();
+      });
+
+      $('.close-accordion-box').click(function(){
+         // $(this).find('i').toggleClass('fa-chevron-up');
+          //var $el = $(this).find('b');
+          //$el.text($el.text() == "View Less" ? "View More": "View Less");
+         // $(this).parent().siblings().find('.accordion-box_content').slideUp();
+         // $(this).prev().slideToggle();
+          $('.accordion-box_content').slideUp();
       });
 
 

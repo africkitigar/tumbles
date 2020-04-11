@@ -75,7 +75,7 @@
 							</div><!-- socials -->
 
 							<div class="my-account mobile-hide">
-								<a href="#">My Account</a>
+								<a href="my-profile.php">My Account</a>
 							</div>
 
 							<div class="cart">

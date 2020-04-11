@@ -64,7 +64,6 @@
         grid: true,
         grid_snap: true
       });
-      console.log($('.irs-from').text());
       $('.irs').on('click', function () {
         var rangeFrom = $('.irs-from').text();
 
@@ -76,6 +75,16 @@
           $('.prefix__cls-1').css('fill', '#e9e9f4');
         } //  alert(rangeFrom);
 
+      });
+      /*------------------------------------*\
+               MODAL
+      \*------------------------------------*/
+
+      $('.modal-open').click(function () {
+        $('.modal, body').addClass('active');
+      });
+      $('.modal-close, .modal-background').click(function () {
+        $('.modal, body').removeClass('active');
       });
       /*------------------------------------*\
                BOTTOM TO TOP ARROW

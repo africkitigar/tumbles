@@ -68,7 +68,7 @@ $("#myRange").ionRangeSlider({
     grid_snap: true,
 
 });
- console.log($('.irs-from').text());
+
 $('.irs').on( 'click', function(){
     var rangeFrom = $('.irs-from').text();
 
@@ -82,6 +82,16 @@ $('.irs').on( 'click', function(){
   //  alert(rangeFrom);
 });
 
+      /*------------------------------------*\
+               MODAL
+      \*------------------------------------*/
+      $('.modal-open').click(function(){
+        $('.modal, body').addClass('active');
+      });
+
+      $('.modal-close, .modal-background').click(function(){
+        $('.modal, body').removeClass('active');
+      });
       /*------------------------------------*\
                BOTTOM TO TOP ARROW
       \*------------------------------------*/

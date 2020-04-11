@@ -4,7 +4,9 @@
 
 		</div>
 		<!-- /wrapper -->
-
+<?php
+$myAccountArray = array("my-profile.php"); ?>
+<?php if ( !in_array( $file_name, $myAccountArray) ): ?>
 			<div class="footer-slider">
 				<div class="container">
 					<div class="bullets-section">
@@ -86,7 +88,7 @@
 					</div>
 				</div>
 			</div><!-- footer-newsletter -->
-
+<?php endif; //my-account array?>
 			<div class="footer-hero">
 				<img src="<?php echo $base_url; ?>/assets/images/dynamic/footer-hero.jpg">
 			</div><!-- footer-hero -->

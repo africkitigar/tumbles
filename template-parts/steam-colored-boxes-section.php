@@ -37,7 +37,7 @@
 					<p>Did the solution work?</p>
 				</div> <!-- /colored-box -->
 
-				<div class="colored-box">
+				<div class="colored-box last-child">
 					<h3>Reflect</h3>
 					<p>What is your next step?</p>
 				</div> <!-- /colored-box -->

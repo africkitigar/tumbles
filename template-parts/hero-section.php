@@ -1,5 +1,5 @@
 <?php
-$pagesArray = array("refer-a-friend.php", "jobs.php"); ?>
+$pagesArray = array("refer-a-friend.php", "jobs.php", "my-profile.php"); ?>
 <?php if ( in_array( $file_name, $pagesArray) ): ?>
 <div class="hero short-hero">
 <?php else: ?>

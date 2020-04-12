@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27.622" height="27.032" viewBox="0 0 27.622 27.032">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:none;stroke:#84bf41;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px}
+        </style>
+    </defs>
+    <g id="prefix__check-circle" transform="translate(-.497 -.479)">
+        <path id="prefix__Path_368" d="M26 12.9V14a12 12 0 1 1-7.117-10.967" class="prefix__cls-1" data-name="Path 368"/>
+        <path id="prefix__Path_369" d="M24.6 4l-12 12.011-3.6-3.6" class="prefix__cls-1" data-name="Path 369" transform="translate(1.399 .401)"/>
+    </g>
+</svg>

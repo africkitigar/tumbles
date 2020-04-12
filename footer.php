@@ -5,8 +5,10 @@
 		</div>
 		<!-- /wrapper -->
 <?php
-$myAccountArray = array("my-profile.php"); ?>
-<?php if ( !in_array( $file_name, $myAccountArray) ): ?>
+$myAccountArray = array("my-profile.php");
+$checkoutArray = array("cart.php", "checkout.php");
+if ( !in_array( $file_name, $checkoutArray) ):
+if ( !in_array( $file_name, $myAccountArray) ): ?>
 			<div class="footer-slider">
 				<div class="container">
 					<div class="bullets-section">
@@ -143,7 +145,7 @@ $myAccountArray = array("my-profile.php"); ?>
 							<img src="<?php echo $base_url; ?>/assets/images/stripe.png" alt="Stripe" class="stripe-footer">
 
 							<h6>We accept:</h6>
-							<img src="<?php echo $base_url; ?>/assets/images/visa-mastercard.png" alt="Stripe">
+							<img src="<?php echo $base_url; ?>/assets/images/visa-mastercard.png" alt="visa-mastercard">
 						</div>
 						<div class="footer-column">
 							<h6>Franchise opportunities</h6>
@@ -169,9 +171,11 @@ $myAccountArray = array("my-profile.php"); ?>
 
 			</footer>
 			<!-- /footer -->
-
+<?php endif; //checkout array?>
 		</div>
 		<!-- /wrapper -->
+
+
 		<script
 		  src="https://code.jquery.com/jquery-3.4.1.min.js"
 		  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

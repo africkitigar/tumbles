@@ -1,6 +1,8 @@
 <?php
 	$base_url="http://".$_SERVER['SERVER_NAME'].dirname($_SERVER["REQUEST_URI"].'?').'/';
+	$file_name =  basename( $_SERVER['PHP_SELF'] );
 ?>
+
 <!doctype html>
 <html>
 	<head>
@@ -22,7 +24,28 @@
 
 			<!-- header -->
 			<header >
-
+			<?php
+				$checkoutArray = array("cart.php", "checkout.php");
+				if (  $file_name == "cart.php" ):
+			?>
+				<div class="cart-header">
+					<div class="container flex flex-space-between">
+						<span></span>
+						<h4>Your Cart</h4>
+						<a href="#">Close</a>
+					</div>
+				</div>
+			<?php elseif( $file_name == "checkout.php" || $file_name == "checkout-payment.php" || $file_name == "thank-you.php" ): ?>
+				<div class="checkout-header">
+					<div class="container flex flex-space-between">
+						<a href="cart.php"><i class="fas fa-chevron-left"></i> Cart (2)</a>
+						<a href="/">
+							<img src="<?php echo $base_url; ?>/assets/images/logo2.svg" alt="Tumbles" class="logo-img">
+						</a>
+						<span></span>
+					</div>
+				</div>
+			<?php else: ?>
 				<div class="header-top">
 					<div class="container flex flex-space-between">
 						 <!--mob button-->
@@ -79,7 +102,7 @@
 							</div>
 
 							<div class="cart">
-								<a href="#">
+								<a href="cart.php">
 									<i class="fas fa-shopping-cart"></i>
 									<span class="count-items">(1)</span>
 								</a>
@@ -123,9 +146,10 @@
 
 				<img src="<?php echo $base_url; ?>/assets/images/header-waves.svg"  class="header-waves mobile-hide">
 
+				<?php endif; //checkout array?>
 			</header>
 			<!-- /header -->
-			<?php $file_name =  basename( $_SERVER['PHP_SELF'] ); ?>
+
 			<?php if ( $file_name == 'contact-us.php' ): ?>
 				<div class="body-content contact-us-page">
 			<?php elseif( $file_name == 'index.php' ): ?>

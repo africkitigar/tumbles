@@ -1,0 +1,266 @@
+.checkout-header {
+	padding: 15px 0;
+	border-bottom:1px solid rgba(0,0,0,0.1);
+
+	.flex {
+		align-items: center;
+	}
+}
+.checkout-wrapper {
+	.sign-in-box {
+		background-color: rgba(0,0,0, 0.1);
+		font-size: 16px;
+		padding: 15px;
+		margin-bottom: 70px;
+
+		a {
+			text-decoration: underline;
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+	}
+
+	.steps {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		margin-bottom: 50px;
+
+		a {
+			font-size: 21px;
+			font-weight: 600;
+			font-family: 'Oduda';
+			position: relative;
+			text-align: center;
+			display: inline-flex;
+			align-items: center;
+			flex-direction: column;
+			cursor: pointer;
+			color: $primary;
+		}
+
+		a::before {
+			content: "";
+			border-radius: 100%;
+			width: 18px;
+			height: 18px;
+			background-color: $primary;
+			display: block;
+			z-index: 3;
+		}
+
+		a.payment,
+		a.review {
+			color: #d7d9dd;
+		}
+		a.payment::before,
+		a.review::before {
+			background-color: #d7d9dd;
+		}
+	}
+	.steps::before {
+		content: "";
+		position: absolute;
+		width: 47%;
+		height: 1px;
+		border-top: 1px dashed #d7d9dd;
+		left: 50px;
+		top: 8px;
+	}
+
+	.steps::after {
+		content: "";
+		position: absolute;
+		width: 42%;
+		height: 1px;
+		border-top: 1px dashed #d7d9dd;
+		right: 40px;
+		top: 8px;
+	}
+
+	.steps.step-payment::before,
+	.steps.step-review::before {
+		border-top: 1px dashed $primary;
+	}
+	.steps.step-review::after {
+		border-top: 1px dashed $primary;
+	}
+
+	.steps.step-payment a.payment {
+		color: $primary!important;
+	}
+	.steps.step-payment a.payment::before,
+	.steps.step-review a::before {
+		background-color: $primary!important;
+		background: url(images/assets/check-circle.svg) no-repeat;
+		background-size: contain!important;
+	}
+
+	.steps.step-review a {
+		color: $primary;
+	}
+
+
+
+	.order-summary {
+		margin-bottom: 70px;
+
+		h4 {
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			font-size: 20px;
+			font-weight: bold;
+			padding-bottom: 10px;
+			margin-bottom: 20px;
+		}
+
+		.order-summary-item {
+			border-bottom: 2px solid rgba(0,0,0,0.1);
+			padding-bottom: 25px;
+			margin-bottom: 30px;
+
+			.label {
+				font-size: 17px;
+			}
+
+			.service .value {
+				font-size: 17px;
+				font-weight: 600;
+				text-transform: uppercase;
+				margin-left: 10px;
+			}
+
+			.duration {
+				.label {
+					font-weight: 600;
+				}
+			}
+
+			.child {
+				margin-top: 20px;
+				font-size: 15px;
+				input {
+					margin-left: 10px;
+				}
+			}
+
+			.quantity-value {
+				margin-top: 30px;
+				font-weight: 600;
+
+				span {
+					font-weight: 400;
+				}
+			}
+
+			.sum {
+				justify-content: flex-end;
+				border-top:1px solid rgba(0,0,0,0.1);
+				padding-top: 15px;
+				margin-top: 15px;
+				font-size: 17px;
+				font-weight: bold;
+			}
+		}
+	}
+
+
+	.summary-information {
+		h2 {
+			font-size: 30px;
+		}
+		span.label {
+			margin-right: 10px;
+			font-size: 15px;
+			font-weight: 600;
+		}
+	}
+}
+
+
+#card-number,
+#user-name,
+#card-expire,
+#secret {
+	padding-left: 50px;
+}
+#card-number {
+	background: url(assets/images/pay.svg) no-repeat;
+	background-position: 4% center;
+}
+#user-name {
+	background: url(assets/images/user.svg) no-repeat;
+	background-position: 5% center;
+}
+#card-expire {
+	background: url(assets/images/calendar.svg) no-repeat;
+	background-position: 10% center;
+}
+#secret {
+	background: url(assets/images/lock-green.svg) no-repeat;
+	background-position: 12% center;
+}
+
+
+
+.payment-info {
+	h3 {
+		font-size: 24px;
+	}
+
+	.credit-card {
+		border-left: 1px solid rgba(0,0,0,0.1);
+
+		h3 {
+			margin-bottom: 62px;
+		}
+	}
+}
+.order-summary.step-payment {
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 30px;
+
+	h2 {
+		font-size: 30px;
+	}
+
+	.person-row {
+		position: relative;
+		margin-bottom: 20px;
+
+		div {
+			background: #fff;
+			z-index: 1;
+			position: relative;
+		}
+	}
+	.person-row::before {
+		content: "";
+		height: 1px;
+		width: 100%;
+		border-bottom: 1px dashed rgba(0,0,0,0.1);
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 5px;
+	}
+}
+
+.cart-sidebar {
+	.form-item.checkbox {
+		margin: 20px 0 10px;
+	}
+}
+
+.back-to-calendar {
+	margin-top: 20px;
+	a {
+		border-radius: 6px;
+		min-width: 290px;
+
+		i {
+			margin-right: 10px;
+		}
+	}
+}

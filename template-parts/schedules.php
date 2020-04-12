@@ -118,11 +118,11 @@
 				<td class="class-name">Squeakers <span>0-10mo</span>
 					<b class="more-info">More Info</b>
 				</td>
-				<td><a href="#">9:00 AM</a></td>
+				<td><a class="modal-open" href="javascript:void(0)">9:00 AM</a></td>
 				<td></td>
 				<td></td>
 				<td></td>
-				<td><a href="#">10:00 AM</a></td>
+				<td><a class="modal-open" href="javascript:void(0)">10:00 AM</a></td>
 				<td></td>
 				<td></td>
 			</tr>
@@ -131,12 +131,12 @@
 					<td class="class-name">Squeakers <span>0-10mo</span>
 					<b class="more-info">More Info</b>
 				</td>
-				<td><a href="#">9:30 AM</a></td>
+				<td><a class="modal-open" href="javascript:void(0)">9:30 AM</a></td>
 				<td></td>
-				<td><a href="#">10:00 AM</a></td>
+				<td><a class="modal-open" href="javascript:void(0)">10:00 AM</a></td>
 				<td></td>
 				<td></td>
-				<td><a href="#">9:30 AM</a><a href="#">10:00 AM</a></td>
+				<td><a class="modal-open" href="javascript:void(0)">9:30 AM</a><a href="javascript:void(0)">10:00 AM</a></td>
 				<td></td>
 			</tr>
 
@@ -144,28 +144,29 @@
 				<td class="class-name">Wobblers <span>0-10mo</span>
 					<b class="more-info">More Info</b>
 				</td>
-				<td><a href="#">9:30 AM</a></td>
-				<td><a href="#">2:30 PM</a></td>
-				<td><a href="#">9:30 AM</a></td>
-				<td><a href="#">12:30 AM</a></td>
-				<td><a href="#">9:30 AM</a></td>
+				<td><a class="modal-open" href="javascript:void(0)">9:30 AM</a></td>
+				<td><a class="modal-open" href="javascript:void(0)">2:30 PM</a></td>
+				<td><a class="modal-open" href="javascript:void(0)">9:30 AM</a></td>
+				<td><a class="modal-open" href="javascript:void(0)">12:30 AM</a></td>
+				<td><a class="modal-open" href="javascript:void(0)">9:30 AM</a></td>
 				<td></td>
-				<td><a href="#">3:30 PM</a></td>
+				<td><a class="modal-open" href="javascript:void(0)">3:30 PM</a></td>
 			</tr>
 
 			<tr>
 				<td class="class-name last">Super Wigglers <span>0-10mo</span>
 					<b class="more-info">More Info</b>
 				</td>
-				<td><a href="#">9:30 AM</a></td>
-				<td><a href="#">2:30 PM</a></td>
-				<td><a href="#">9:30 AM</a></td>
-				<td><a href="#">12:30 AM</a></td>
-				<td><a href="#">9:30 AM</a></td>
+				<td><a class="modal-open" href="javascript:void(0)">9:30 AM</a></td>
+				<td><a class="modal-open" href="javascript:void(0)">2:30 PM</a></td>
+				<td><a class="modal-open" href="javascript:void(0)">9:30 AM</a></td>
+				<td><a class="modal-open" href="javascript:void(0)">12:30 AM</a></td>
+				<td><a class="modal-open" href="javascript:void(0)">9:30 AM</a></td>
 				<td></td>
-				<td><a href="#">3:30 PM</a></td>
+				<td><a class="modal-open" href="javascript:void(0)">3:30 PM</a></td>
 			</tr>
 		</table>
 	</div><!-- container -->
 </div>
 
+<?php include 'add-to-cart-modal.php'; ?>

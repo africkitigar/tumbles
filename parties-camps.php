@@ -128,4 +128,7 @@
 </div>
 <?php include 'template-parts/intro-section.php'; ?>
 <?php include 'template-parts/meet-team-section.php'; ?>
+
+
 <?php include 'footer.php';?>
+

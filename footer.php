@@ -12,7 +12,7 @@ if ( !in_array( $file_name, $myAccountArray) ): ?>
 			<div class="footer-slider">
 				<div class="container">
 					<div class="bullets-section">
-						<h2 class="section-title square-circle">What parents & kids are saying about Tumbles</h2>
+						<h2 class="section-title square-circle">What parents are saying about Tumbles</h2>
 				       <!-- Add Pagination -->
 				        <div class="swiper-pagination"></div>
 				    </div>
@@ -181,8 +181,23 @@ if ( !in_array( $file_name, $myAccountArray) ): ?>
 		  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 		  crossorigin="anonymous"></script>
 		 <script src="<?php echo $base_url; ?>/assets/js/swiper.min.js"></script>
-		 <script src="<?php echo $base_url; ?>/assets/js/custom.min.js"></script>
+
 		 <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+		 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
+		 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.10.1/dist/fullcalendar.min.js"></script>
+		 <script src="<?php echo $base_url; ?>/assets/js/custom.min.js"></script>
+
+		 <script>
+jQuery(document).ready(function(){
+jQuery('#calendar').fullCalendar({
+  header: {
+      left: 'prev,next,today',
+      center: 'title',
+      right: 'month,agendaWeek,agendaDay'
+      }
+});
+});
+</script>
 	</body>
 </html>
 

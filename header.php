@@ -8,6 +8,24 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Title</title>
+		<meta name="title" content="">
+
+		<meta name="description" content="">
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="">
+		<meta property="og:title" content="">
+		<meta property="og:description" content="">
+		<meta property="og:image" content="">
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="">
+		<meta property="twitter:title" content="">
+		<meta property="twitter:description" content="">
+		<meta property="twitter:image" content="">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="style.min.css">

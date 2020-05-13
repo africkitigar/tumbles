@@ -127,6 +127,17 @@
 							</div>
 
 							<div class="language-switcher">
+
+								<ul>
+									<li class="active-language">
+										<a href="#"><img src="<?php echo $base_url; ?>/assets/images/flag-usa.svg"></a>
+
+										<ul class="lang-submenu">
+											<li><a href="#"><img src="<?php echo $base_url; ?>/assets/images/flag-usa.svg"></a></li>
+										</ul>
+									</li>
+
+								</ul>
 								
 							</div>
 						</div><!-- /header-top_right -->
@@ -141,6 +152,7 @@
 								<li><a href="">Calendar</a></li>
 								<li class="has-children">
 									<a href="gym-classes.php">Gym Classes</a>
+									<i class="fas fa-chevron-down submenu-opener"></i>
 									<div class="mega-menu">
 										<ul class="sub-menu">
 											<li><a href="parent-child-classes.php">Parent / Child  (4 mo - 3 y)</a></li>
@@ -148,6 +160,7 @@
 											<li><a href="grade-school.php">Grade School Classes (7-12 y)</a></li>
 										</ul>
 									</div>
+
 								</li>
 								<li><a href="steam-classes.php">STEAM Classes</a></li>
 								<li><a href="parties-camps.php">Parties & Camps</a></li>

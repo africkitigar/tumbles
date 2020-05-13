@@ -12,9 +12,8 @@
         $('.header-bottom').toggleClass('menu-open');
       }); //mob submenus
 
-      $('.side-nav .menu-item-has-children').click(function (e) {
-        $(this).toggleClass('menu-open');
-        $(this).find('.sub-menu').slideToggle('slow', 'swing');
+      $('header .has-children').click(function (e) {
+        $(this).find('.mega-menu').toggleClass('active');
       });
       /*------------------------------------*\
       				 END OF MOBILE MENU

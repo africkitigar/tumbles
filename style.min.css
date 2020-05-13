@@ -47,6 +47,12 @@ header .header-top .socials{position:relative}
 header .header-top .socials i{margin-left:15px;font-size:16px}
 header .header-top .socials a:hover i{color:#212a53}
 header .header-top .socials::after,header .header-top .my-account::after{content:"";display:inline-block;width:1px;height:12px;background:#fff;margin:0 15px}
+header .header-top .language-switcher{margin-left:20px}
+header .header-top .language-switcher ul{list-style:none;position:relative}
+header .header-top .language-switcher ul li img{display:block}
+header .header-top .language-switcher .lang-submenu{display:none;position:absolute;left:0;top:100%;padding-top:8px}
+header .header-top .language-switcher>ul>li:hover .lang-submenu{display:block}
+header .header-top .language-switcher>ul::after{font-family:"Font Awesome 5 Free";font-weight:900;content:"\f0d7";position:absolute;right:-15px;top:-4px}
 header .header-bottom{position:relative;background:#fff;padding:20px 0;z-index:1983}
 header .header-bottom ul{list-style:none}
 header .header-bottom ul.flex{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
@@ -614,7 +620,13 @@ body.active{overflow:hidden}
 }@media only screen and (min-width:1025px){.accordion-boxes-content .accordion-boxes{display:grid;grid-column-gap:20px;grid-template-columns:auto auto auto}
 }@media only screen and (min-width:1140px){.desktop-hide{display:none !important}
 }@media only screen and (max-width:1180px){.container,.container-narrow{padding:0 20px}
-}@media only screen and (max-width:1140px){.mobile-hide{display:none !important}
+}@media only screen and (max-width:1140px){header .has-children{text-align:center;position:relative}
+header .has-children .submenu-opener{color:#84bf41;margin-left:20px}
+header .has-children .mega-menu.active{display:block !important}
+header .has-children .mega-menu{position:relative !important;top:0 !important;left:0 !important;padding-top:8px !important;display:none !important}
+header .has-children .mega-menu ul li a{margin-right:0 !important}
+header .has-children::after{display:none !important}
+.mobile-hide{display:none !important}
 .header-top{z-index:2015;position:relative}
 .header-top .logo{margin:0 auto !important}
 .header-top .container{-webkit-box-align:center;-ms-flex-align:center;align-items:center}

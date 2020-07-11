@@ -134,6 +134,8 @@
 
 										<ul class="lang-submenu">
 											<li><a href="#"><img src="<?php echo $base_url; ?>/assets/images/flag-usa.svg"></a></li>
+											<li><a href="#"><img src="<?php echo $base_url; ?>/assets/images/flag-usa.svg"></a></li>
+											<li><a href="#"><img src="<?php echo $base_url; ?>/assets/images/flag-usa.svg"></a></li>
 										</ul>
 									</li>
 

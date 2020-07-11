@@ -50,7 +50,8 @@ header .header-top .socials::after,header .header-top .my-account::after{content
 header .header-top .language-switcher{margin-left:20px}
 header .header-top .language-switcher ul{list-style:none;position:relative}
 header .header-top .language-switcher ul li img{display:block}
-header .header-top .language-switcher .lang-submenu{display:none;position:absolute;left:0;top:100%;padding-top:8px}
+header .header-top .language-switcher .lang-submenu{display:none;position:absolute;left:0;top:100%;padding-top:8px;z-index:1999}
+header .header-top .language-switcher .lang-submenu li{margin-bottom:8px}
 header .header-top .language-switcher>ul>li:hover .lang-submenu{display:block}
 header .header-top .language-switcher>ul::after{font-family:"Font Awesome 5 Free";font-weight:900;content:"\f0d7";position:absolute;right:-15px;top:-4px}
 header .header-bottom{position:relative;background:#fff;padding:20px 0;z-index:1983}
@@ -58,7 +59,6 @@ header .header-bottom ul{list-style:none}
 header .header-bottom ul.flex{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 header .header-bottom ul.flex li a{color:#212a53;font-size:16px}
 header .header-bottom ul.flex>li>a{font-weight:600;z-index:1983;position:relative}
-header .header-bottom nav ul li.has-children::after{font-family:"Font Awesome 5 Free";font-weight:900;content:"\f078";display:inline-block;color:#84bf41}
 header .header-bottom nav ul li.has-children:hover>.mega-menu{display:block}
 header .header-bottom nav a:hover,header .header-bottom nav li.active>a{color:#84bf41 !important}
 header .header-bottom nav>ul .mega-menu{display:none;position:absolute;left:0;width:100%;right:0;top:49px;background:#fff;padding-top:23px}

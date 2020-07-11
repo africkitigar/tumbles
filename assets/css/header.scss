@@ -68,6 +68,11 @@ header {
                 left: 0;
                 top: 100%;
                 padding-top: 8px;
+                z-index: 1999;
+
+                li {
+                    margin-bottom: 8px;
+                }
             }
 
             > ul > li:hover {
@@ -118,13 +123,13 @@ header {
 
         nav {
             ul {
-                li.has-children::after {
+               /* li.has-children::after {
                     font-family: "Font Awesome 5 Free";
                     font-weight: 900;
                     content: "\f078";
                     display: inline-block;
                     color: $green;
-                }
+                }*/
 
                 li.has-children:hover > .mega-menu {
                     display:block;
